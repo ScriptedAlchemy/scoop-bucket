@@ -1,0 +1,24 @@
+{
+  "version": "0.0.3-beta.1",
+  "description": "Code intelligence tool (beta channel)",
+  "homepage": "https://github.com/ScriptedAlchemy/tracedecay",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/ScriptedAlchemy/tracedecay/releases/download/v0.0.3-beta.1/tracedecay-beta-v0.0.3-beta.1-x86_64-windows.zip",
+      "hash": "5c8672b1c81b92cd59f9056ac923fcf3ddca6fdca94965fca5f85b0cc7eb3e21"
+    }
+  },
+  "bin": "tracedecay.exe",
+  "checkver": {
+    "github": "https://github.com/ScriptedAlchemy/tracedecay",
+    "regex": "v([\d.]+-beta[\d.]*)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/ScriptedAlchemy/tracedecay/releases/download/v$version/tracedecay-beta-v$version-x86_64-windows.zip"
+      }
+    }
+  }
+}
